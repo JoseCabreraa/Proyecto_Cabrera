@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendariot</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!--Libreria BTS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+          <!-- Texto + Logo -->
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="../index.html"
+          >
+            <img
+              src="../img/guantes_chocando-removebg-preview.png"
+              alt="Icono"
+              width="40"
+              height="40"
+            />
+            Peleas Mixtas
+          </a>
+
+          <!-- Botón para dispositivos móviles -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Elementos de navegación -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./calendario.html">Calendario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./campeones.html">Campeones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ranking.html">Ranking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-calendario">
+      <section class="proximas-peleas">
+        <h2>Próximas Peleas</h2>
+        <div class="tabla peleas-grid">
+          <!-- Encabezados -->
+          <div class="header">Fecha / Hora</div>
+          <div class="header">Lugar</div>
+          <div class="header">Peleadores</div>
+          <div class="header">Categoría</div>
+
+          <!-- Fila 1 -->
+          <div>14/05/2025 - 20:00</div>
+          <div>Madison Square Garden</div>
+          <div>John Doe vs. Jane Smith</div>
+          <div>Peso pesado</div>
+
+          <!-- Fila 2 -->
+          <div>21/05/2025 - 18:30</div>
+          <div>Estadio Azteca</div>
+          <div>Maria Garcia vs. Luisa Pérez</div>
+          <div>Peso gallo</div>
+        </div>
+      </section>
+
+      <section class="anteriores-peleas">
+        <h2>Anteriores Peleas</h2>
+        <div class="tabla peleas-grid-5">
+          <!-- Encabezados -->
+          <div class="header">Fecha / Hora</div>
+          <div class="header">Lugar</div>
+          <div class="header">Peleadores</div>
+          <div class="header">Categoría</div>
+          <div class="header">Resultado</div>
+
+          <!-- Fila 1 -->
+          <div>10/05/2025 - 18:00</div>
+          <div>Las Vegas</div>
+          <div>Alice Doe vs. Bob Smith</div>
+          <div>Peso ligero</div>
+          <div>Victoria: Alice Doe</div>
+
+          <!-- Fila 2 -->
+          <div>05/05/2025 - 21:00</div>
+          <div>MGM Grand</div>
+          <div>Carlos Sanchez vs. Mark Lee</div>
+          <div>Peso wélter</div>
+          <div>Victoria: Mark Lee</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-item">
+        <img src="/img/ig.png" alt="Instagram" height="30" width="30" />
+        <p>@PeleasMixtas25</p>
+      </div>
+      <div class="footer-item">
+        <img src="/img/wsp.webp" alt="WhatsApp" height="60" width="60" />
+        <p>+54(234)213454</p>
+      </div>
+      <div class="footer-item">
+        <img
+          src="/img/tik_tok-removebg-preview.png"
+          alt="TikTok"
+          height="50"
+          width="50"
+        />
+        <p>Peleas_mix</p>
+      </div>
+      <div class="footer-item">
+        <img
+          src="/img/facebook-removebg-preview.png"
+          alt="Facebook"
+          height="30"
+          width="30"
+        />
+        <p>Peleas Mixtas</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

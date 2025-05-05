@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  min-height: 900px;
+  padding: 20px;
+}
+/*NAV*/
+.navbar-custom {
+  background-color: #004f91; /* Fondo azul */
+}
+.navbar-brand {
+  font-family: "Fascinate", cursive; /* Fuente personalizada */
+  font-size: 1.8rem;
+  color: white;
+}
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 1.2rem;
+}
+.navbar-nav .nav-link:hover {
+  color: #d1ecf1; /* Color al pasar el mouse */
+}
+.navbar-brand img {
+  margin-right: 10px; /* Espaciado entre logo y texto */
+}
+/*    */
+/* Encabezado de bienvenida */
+.bienvenida {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bienvenida h1 {
+  font-size: 2rem;
+  color: #004f91;
+}
+.bienvenida p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Contenido principal */
+.contenido-principal {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna para móviles */
+  gap: 20px;
+  align-items: center;
+}
+
+.imagen-principal img {
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.descripcion-principal {
+  text-align: justify;
+}
+.descripcion-principal h2 {
+  font-size: 1.5rem;
+  color: #004f91;
+}
+.descripcion-principal p {
+  font-size: 1rem;
+  color: #333;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* GRID de Calendario*/
+.main-calendario {
+  padding: 20px;
+}
+
+.peleas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas para Próximas Peleas */
+  gap: 10px;
+}
+
+.peleas-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas para Anteriores Peleas */
+  gap: 10px;
+}
+
+/* Estilo general */
+.header {
+  font-weight: bold;
+  background-color: #004f91;
+  color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.tabla div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Contenedor principal De la Pagina Contacto*/
+.container-contacto {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Diseño adaptable */
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+}
+
+/* Redes Sociales */
+.red-social {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.red-social img {
+  border-radius: 50%; /* Íconos redondeados */
+  transition: transform 0.3s ease; /* Animación al pasar el mouse */
+}
+
+.red-social img:hover {
+  transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+.red-social p {
+  font-size: 1rem;
+  color: #333; /* Texto gris oscuro */
+  margin: 0;
+}
+
+/* Formulario */
+.formulario {
+  grid-column: span 2; /* Ocupa más espacio en pantallas grandes */
+  text-align: center;
+}
+
+.formulario h1 {
+  font-size: 1.5rem;
+  color: #004f91; /* Azul oscuro */
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+form input[type="email"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #004f91;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #003b70; /* Color más oscuro al pasar el mouse */
+}
+/*Diseño de la pagina de Campeones*/
+/* Estilo para cada categoría */
+.categoria {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Imagen a la izquierda, texto a la derecha */
+  gap: 20px;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  padding: 20px;
+}
+
+/* Estilo para las imágenes */
+.categoria .imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el contenido textual */
+.categoria .contenido h2 {
+  font-size: 1.8rem;
+  color: #004f91; /* Azul oscuro */
+  margin-bottom: 10px;
+}
+
+.categoria .contenido p {
+  font-size: 1rem;
+  color: #333; /* Gris oscuro */
+  line-height: 1.6;
+}
+
+/* Contenedor principal de ranking */
+.container-ranking {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container-ranking h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #004f91; /* Azul oscuro */
+  margin-bottom: 30px;
+}
+
+/* Secciones del ranking */
+.ranking-campeon,
+.ranking-peleadores {
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.ranking-campeon h2,
+.ranking-peleadores h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Perfil general */
+.perfil {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Imagen y contenido */
+  gap: 20px;
+  align-items: center;
+}
+
+.perfil img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.perfil .info h3 {
+  font-size: 1.5rem;
+  color: #004f91; /* Azul oscuro */
+}
+
+.perfil .info p {
+  font-size: 1rem;
+  color: #333; /* Gris oscuro */
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Se adapta a pantallas pequeñas y grandes */
+  background-color: #004f91;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-item {
+  display: flex; /* Flexbox para alinear íconos y texto */
+  flex-direction: column; /* Cambia la dirección en pantallas pequeñas */
+  align-items: center;
+  gap: 5px;
+}
+
+.footer img {
+  border-radius: 50%;
+}
+
+/* Diseño responsive para pantallas grandes del body index */
+@media (min-width: 768px) {
+  .contenido-principal {
+    grid-template-columns: 1fr 1fr; /* Dos columnas: imagen y texto */
+  }
+  .bienvenida h1 {
+    font-size: 2.5rem;
+  }
+  .bienvenida p {
+    font-size: 1.5rem;
+  }
+}
+/*footer responsive*/
+@media (min-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-item {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/*responsive en grid de calendario */
+@media (max-width: 768px) {
+  .peleas-grid {
+    grid-template-columns: 1fr; /* 2 columnas en móviles */
+  }
+
+  .peleas-grid-5 {
+    grid-template-columns: 1fr; /* Cada celda ocupa una fila en móviles */
+  }
+}
+
+/* Responsividad del main de contacto */
+@media (max-width: 768px) {
+  .formulario {
+    grid-column: span 1; /* Ocupa menos espacio en móviles */
+  }
+  form input[type="email"] {
+    font-size: 0.9rem;
+  }
+  form button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+/*Responsividad para el main de campeones*/
+@media (max-width: 768px) {
+  .categoria {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en móviles */
+    text-align: center;
+  }
+  .categoria .imagen img {
+    max-width: 80%; /* Ajusta el tamaño de la imagen en dispositivos pequeños */
+    margin: 0 auto;
+  }
+  .categoria .contenido h2 {
+    font-size: 1.5rem;
+  }
+}
