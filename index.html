@@ -118,6 +118,32 @@
           </p>
         </div>
       </section>
+      <br /><br />
+      <section class="contenido-principal">
+        <div class="imagen-principal">
+          <img
+            src="./img/Pelea topuria vs oliveira.jpg"
+            alt="Pelea Topuria vs Oliveira"
+          />
+        </div>
+        <div class="descripcion-principal">
+          <h2>
+            Ilia Topuria vs. Charles Oliveira por el título de peso ligero de la
+            UFC
+          </h2>
+          <p>
+            Ilia Topuria y Charles Oliveira se verán las caras en el UFC 317 por
+            el título de peso ligero, que quedó vacante tras la salida del ruso
+            Islam Makhachev. El español buscará consagrarse campeón en una nueva
+            categoría, luego de subir desde el peso pluma, mientras que el
+            brasileño intentará recuperar el cinturón que perdió en 2022. La
+            pelea se llevará a cabo el sábado 28 de junio en el T-Mobile de las
+            Vegas, en la UFC International Fight Week. La velada contará también
+            con el combate entre Alexandre Pantoja y Kai Kara-France, por el
+            título de peso mosca.
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-item">
@@ -153,5 +179,13 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const contenidos = document.querySelectorAll(".contenido-principal");
+        contenidos.forEach((elemento) => {
+          elemento.classList.add("activo");
+        });
+      });
+    </script>
   </body>
 </html>

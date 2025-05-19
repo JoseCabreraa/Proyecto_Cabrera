@@ -169,5 +169,14 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".categoria").forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("activo");
+          }, index * 200); // 200ms entre cada uno
+        });
+      });
+    </script>
   </body>
 </html>

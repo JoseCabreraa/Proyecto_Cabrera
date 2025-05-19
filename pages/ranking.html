@@ -70,7 +70,7 @@
         <h1>Ranking Peso Ligero</h1>
 
         <!-- Campeón Actual -->
-        <section class="ranking-campeon">
+        <section class="ranking-campeon scroll-animar">
           <h2>Actual Campeón</h2>
           <div class="perfil">
             <img
@@ -88,7 +88,7 @@
         </section>
 
         <!-- Ranking de peleadores -->
-        <section class="ranking-peleadores">
+        <section class="ranking-peleadores scroll-animar">
           <h2>Top Peleadores</h2>
           <!-- Clasificado 1 -->
           <div class="perfil">
@@ -118,7 +118,7 @@
         <!-- Título principal Peso Completo-->
         <h1>Ranking Peso Completo</h1>
 
-        <section class="ranking-campeon">
+        <section class="ranking-campeon scroll-animar">
           <h2>Actual Campeón</h2>
           <div class="perfil">
             <img
@@ -135,7 +135,7 @@
           </div>
         </section>
 
-        <section class="ranking-peleadores">
+        <section class="ranking-peleadores scroll-animar">
           <h2>Top Peleadores</h2>
           <!-- Clasificado 1 -->
           <div class="perfil">
@@ -198,5 +198,32 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const secciones = document.querySelectorAll(
+          ".ranking-campeon, .ranking-peleadores"
+        );
+        secciones.forEach((el, index) => {
+          setTimeout(() => {
+            el.classList.add("activo");
+          }, index * 200);
+        });
+      });
+    </script>
+    <script>
+      const scrollAnimar = document.querySelectorAll(".scroll-animar");
+
+      const mostrarElementos = () => {
+        scrollAnimar.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= window.innerHeight - 100) {
+            el.classList.add("visible");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", mostrarElementos);
+      window.addEventListener("DOMContentLoaded", mostrarElementos);
+    </script>
   </body>
 </html>
